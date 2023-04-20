@@ -1,10 +1,9 @@
-import * as React from "react";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { makeStyles } from "@material-ui/core";
+
 import Star from "../../../assets/brandImages/Star";
 import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
 import AssignmentTurnedInOutlinedIcon from "@mui/icons-material/AssignmentTurnedInOutlined";
@@ -27,100 +26,50 @@ import AccountBalanceOutlinedIcon from "@mui/icons-material/AccountBalanceOutlin
 import ConfirmationNumberOutlinedIcon from "@mui/icons-material/ConfirmationNumberOutlined";
 import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
 
-const useStyles = makeStyles(() => ({
-  root: {
-    width: "100%",
-    "& .Mui-expanded": {
-      margin: 0,
-    },
-    "& .MuiAccordionSummary-root.Mui-expanded": {
-      minHeight: 0,
-    },
-    "& .MuiAccordionSummary-root.Mui-expanded .MuiAccordionSummary-content": {
-      margin: 0,
-    },
-  },
-  wrapper: {
-    width: "270px",
-    display: "flex",
-    flexDirection: "column",
-  },
-  info: {
-    display: "flex",
-    marginBottom: "0px",
-    backgroundColor: "#F9FAFC",
-    gap: "16px",
-    fontSize: "14px",
-    alignItems: "center",
-    justifyContent: "space-between",
-    padding: "0px",
-    height: "40px",
-  },
-  info2: {
-    display: "flex",
-    marginBottom: "0px",
-    backgroundColor: "#F9FAFC",
-    gap: "16px",
-    fontSize: "14px",
-    alignItems: "center",
-    padding: "0px",
-    height: "40px",
-  },
-  icon: {
-    paddingLeft: "32px",
-    color: "red",
-  },
-}));
+import classes from "./accordion.module.css";
 
-export default function SimpleAccordion() {
-  const classes = useStyles();
+const SimpleAccordion = () => {
   return (
     <div className={classes.root}>
       <Accordion className={classes.wrapper}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon sx={{ color: "red" }} />}
           aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
+          id="panel1a-header">
           <Typography sx={{ fontWeight: "700" }}>Favorites</Typography>
         </AccordionSummary>
         <AccordionDetails sx={{ padding: "0px" }} className={classes.info}>
           <CalendarMonthOutlinedIcon
             sx={{ width: "16px", height: "16px" }}
-            className={classes.icon}
-          ></CalendarMonthOutlinedIcon>
+            className={classes.icon}></CalendarMonthOutlinedIcon>
           <Typography>Time and Absence</Typography>
           <Star></Star>
         </AccordionDetails>
         <AccordionDetails className={classes.info} sx={{ padding: "0px" }}>
           <AssignmentTurnedInOutlinedIcon
             sx={{ width: "16px", height: "16px" }}
-            className={classes.icon}
-          ></AssignmentTurnedInOutlinedIcon>
+            className={classes.icon}></AssignmentTurnedInOutlinedIcon>
           <Typography>Compensation</Typography>
           <Star></Star>
         </AccordionDetails>
         <AccordionDetails className={classes.info} sx={{ padding: "0px" }}>
           <PaymentsOutlinedIcon
             sx={{ width: "16px", height: "16px" }}
-            className={classes.icon}
-          ></PaymentsOutlinedIcon>
+            className={classes.icon}></PaymentsOutlinedIcon>
           <Typography>Report a Payment Issue</Typography>
           <Star></Star>
         </AccordionDetails>
         <AccordionDetails className={classes.info} sx={{ padding: "0px" }}>
           <Inventory2OutlinedIcon
             sx={{ width: "16px", height: "16px" }}
-            className={classes.icon}
-          ></Inventory2OutlinedIcon>
+            className={classes.icon}></Inventory2OutlinedIcon>
           <Typography>Job oppenings</Typography>
           <Star></Star>
         </AccordionDetails>
         <AccordionDetails className={classes.info} sx={{ padding: "0px" }}>
           <ExtensionOutlinedIcon
             sx={{ width: "16px", height: "16px" }}
-            className={classes.icon}
-          ></ExtensionOutlinedIcon>
+            className={classes.icon}></ExtensionOutlinedIcon>
           <Typography>Connect</Typography>
           <Star></Star>
         </AccordionDetails>
@@ -129,43 +78,37 @@ export default function SimpleAccordion() {
         <AccordionSummary
           expandIcon={<ExpandMoreIcon sx={{ color: "red" }} />}
           aria-controls="panel2a-content"
-          id="panel2a-header"
-        >
+          id="panel2a-header">
           <Typography sx={{ fontWeight: "700" }}>Quick Links</Typography>
         </AccordionSummary>
         <AccordionDetails sx={{ padding: "0px" }} className={classes.info2}>
           <BusinessCenterOutlinedIcon
             sx={{ width: "16px", height: "16px" }}
-            className={classes.icon}
-          ></BusinessCenterOutlinedIcon>
+            className={classes.icon}></BusinessCenterOutlinedIcon>
           <Typography>Labour day</Typography>
         </AccordionDetails>
         <AccordionDetails className={classes.info2} sx={{ padding: "0px" }}>
           <ZoomInMapOutlinedIcon
             sx={{ width: "16px", height: "16px" }}
-            className={classes.icon}
-          ></ZoomInMapOutlinedIcon>
+            className={classes.icon}></ZoomInMapOutlinedIcon>
           <Typography>Concur</Typography>
         </AccordionDetails>
         <AccordionDetails className={classes.info2} sx={{ padding: "0px" }}>
           <PanToolOutlinedIcon
             sx={{ width: "16px", height: "16px" }}
-            className={classes.icon}
-          ></PanToolOutlinedIcon>
+            className={classes.icon}></PanToolOutlinedIcon>
           <Typography>Applause</Typography>
         </AccordionDetails>
         <AccordionDetails className={classes.info2} sx={{ padding: "0px" }}>
           <Inventory2OutlinedIcon
             sx={{ width: "16px", height: "16px" }}
-            className={classes.icon}
-          ></Inventory2OutlinedIcon>
+            className={classes.icon}></Inventory2OutlinedIcon>
           <Typography>Job oppenings</Typography>
         </AccordionDetails>
         <AccordionDetails className={classes.info2} sx={{ padding: "0px" }}>
           <ExtensionOutlinedIcon
             sx={{ width: "16px", height: "16px" }}
-            className={classes.icon}
-          ></ExtensionOutlinedIcon>
+            className={classes.icon}></ExtensionOutlinedIcon>
           <Typography>Connect</Typography>
         </AccordionDetails>
       </Accordion>
@@ -173,37 +116,32 @@ export default function SimpleAccordion() {
         <AccordionSummary
           expandIcon={<ExpandMoreIcon sx={{ color: "red" }} />}
           aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
+          id="panel1a-header">
           <Typography sx={{ fontWeight: "700" }}>Quick Actions</Typography>
         </AccordionSummary>
         <AccordionDetails className={classes.info2} sx={{ padding: "0px" }}>
           <PaymentsOutlinedIcon
             sx={{ width: "16px", height: "16px" }}
-            className={classes.icon}
-          ></PaymentsOutlinedIcon>
+            className={classes.icon}></PaymentsOutlinedIcon>
           <Typography>Report a Payment Issue</Typography>
         </AccordionDetails>
         <AccordionDetails sx={{ padding: "0px" }} className={classes.info2}>
           <BeachAccessOutlinedIcon
             sx={{ width: "16px", height: "16px" }}
-            className={classes.icon}
-          ></BeachAccessOutlinedIcon>
+            className={classes.icon}></BeachAccessOutlinedIcon>
           <Typography>Request Vacation</Typography>
         </AccordionDetails>
         <AccordionDetails className={classes.info2} sx={{ padding: "0px" }}>
           <SickOutlinedIcon
             sx={{ width: "16px", height: "16px" }}
-            className={classes.icon}
-          ></SickOutlinedIcon>
+            className={classes.icon}></SickOutlinedIcon>
           <Typography>Manage Sick leaves</Typography>
         </AccordionDetails>
 
         <AccordionDetails className={classes.info2} sx={{ padding: "0px" }}>
           <ShopOutlinedIcon
             sx={{ width: "16px", height: "16px" }}
-            className={classes.icon}
-          ></ShopOutlinedIcon>
+            className={classes.icon}></ShopOutlinedIcon>
           <Typography>WDC Furlugh</Typography>
         </AccordionDetails>
       </Accordion>
@@ -211,8 +149,7 @@ export default function SimpleAccordion() {
         <AccordionSummary
           expandIcon={<ExpandMoreIcon sx={{ color: "red" }} />}
           aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
+          id="panel1a-header">
           <Typography sx={{ fontWeight: "700" }}>
             Other Important Actions
           </Typography>
@@ -220,50 +157,43 @@ export default function SimpleAccordion() {
         <AccordionDetails className={classes.info2} sx={{ padding: "0px" }}>
           <CreditCardOutlinedIcon
             sx={{ width: "16px", height: "16px" }}
-            className={classes.icon}
-          ></CreditCardOutlinedIcon>
+            className={classes.icon}></CreditCardOutlinedIcon>
           <Typography>Payroll</Typography>
         </AccordionDetails>
         <AccordionDetails sx={{ padding: "0px" }} className={classes.info2}>
           <CakeOutlinedIcon
             sx={{ width: "16px", height: "16px" }}
-            className={classes.icon}
-          ></CakeOutlinedIcon>
+            className={classes.icon}></CakeOutlinedIcon>
           <Typography>Benefits</Typography>
         </AccordionDetails>
         <AccordionDetails className={classes.info2} sx={{ padding: "0px" }}>
           <AssignmentTurnedInOutlinedIcon
             sx={{ width: "16px", height: "16px" }}
-            className={classes.icon}
-          ></AssignmentTurnedInOutlinedIcon>
+            className={classes.icon}></AssignmentTurnedInOutlinedIcon>
           <Typography>Compensation</Typography>
         </AccordionDetails>
         <AccordionDetails className={classes.info2} sx={{ padding: "0px" }}>
           <PersonAddAlt1OutlinedIcon
             sx={{ width: "16px", height: "16px" }}
-            className={classes.icon}
-          ></PersonAddAlt1OutlinedIcon>
+            className={classes.icon}></PersonAddAlt1OutlinedIcon>
           <Typography>Onboarding</Typography>
         </AccordionDetails>
         <AccordionDetails className={classes.info2} sx={{ padding: "0px" }}>
           <PersonRemoveAlt1OutlinedIcon
             sx={{ width: "16px", height: "16px" }}
-            className={classes.icon}
-          ></PersonRemoveAlt1OutlinedIcon>
+            className={classes.icon}></PersonRemoveAlt1OutlinedIcon>
           <Typography>Offboarding</Typography>
         </AccordionDetails>
         <AccordionDetails className={classes.info2} sx={{ padding: "0px" }}>
           <CalendarMonthOutlinedIcon
             sx={{ width: "16px", height: "16px" }}
-            className={classes.icon}
-          ></CalendarMonthOutlinedIcon>
+            className={classes.icon}></CalendarMonthOutlinedIcon>
           <Typography>Time and Absence</Typography>
         </AccordionDetails>
         <AccordionDetails className={classes.info2} sx={{ padding: "0px" }}>
           <CorporateFareOutlinedIcon
             sx={{ width: "16px", height: "16px" }}
-            className={classes.icon}
-          ></CorporateFareOutlinedIcon>
+            className={classes.icon}></CorporateFareOutlinedIcon>
           <Typography>Infrastucture</Typography>
         </AccordionDetails>
       </Accordion>
@@ -271,40 +201,37 @@ export default function SimpleAccordion() {
         <AccordionSummary
           expandIcon={<ExpandMoreIcon sx={{ color: "red" }} />}
           aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
+          id="panel1a-header">
           <Typography sx={{ fontWeight: "700" }}>Learn and Growth</Typography>
         </AccordionSummary>
         <AccordionDetails className={classes.info2} sx={{ padding: "0px" }}>
           <MapOutlinedIcon
             sx={{ width: "16px", height: "16px" }}
-            className={classes.icon}
-          ></MapOutlinedIcon>
+            className={classes.icon}></MapOutlinedIcon>
           <Typography>Open Programs</Typography>
         </AccordionDetails>
         <AccordionDetails sx={{ padding: "0px" }} className={classes.info2}>
           <AccountBalanceOutlinedIcon
             sx={{ width: "16px", height: "16px" }}
-            className={classes.icon}
-          ></AccountBalanceOutlinedIcon>
+            className={classes.icon}></AccountBalanceOutlinedIcon>
           <Typography>Facilities</Typography>
         </AccordionDetails>
         <AccordionDetails className={classes.info2} sx={{ padding: "0px" }}>
           <ConfirmationNumberOutlinedIcon
             sx={{ width: "16px", height: "16px" }}
-            className={classes.icon}
-          ></ConfirmationNumberOutlinedIcon>
+            className={classes.icon}></ConfirmationNumberOutlinedIcon>
           <Typography>Our Partners</Typography>
         </AccordionDetails>
 
         <AccordionDetails className={classes.info2} sx={{ padding: "0px" }}>
           <SchoolOutlinedIcon
             sx={{ width: "16px", height: "16px" }}
-            className={classes.icon}
-          ></SchoolOutlinedIcon>
+            className={classes.icon}></SchoolOutlinedIcon>
           <Typography>Scolarships</Typography>
         </AccordionDetails>
       </Accordion>
     </div>
   );
-}
+};
+
+export default SimpleAccordion;
