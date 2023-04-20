@@ -5,6 +5,7 @@ import SearchIcon from "@material-ui/icons/Search";
 import classes from "./search.module.css";
 import { SearchProps } from "./types/search-props";
 import ISearchResults from "./types/interfaces";
+import ErrorBoundary from "../../../error-boundary/ErrorBoundary";
 
 const Search = ({
   setIsSearchOptionSelected,
@@ -62,6 +63,7 @@ const Search = ({
           }}
           value={inputValue}
         />
+
         <div className={classes.dropdown}>
           {searchResults.length > 0 && isSearchMade
             ? searchResults.map((result) => (

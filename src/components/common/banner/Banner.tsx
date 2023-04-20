@@ -6,6 +6,7 @@ import classes from "./banner.module.css";
 import Search from "../search/Search";
 import { Dispatch } from "react";
 import ISearchResults from "../search/types/interfaces";
+import ErrorBoundary from "../../../error-boundary/ErrorBoundary";
 
 type BannerProps = {
   setIsSearchOptionSelected: Dispatch<React.SetStateAction<boolean>>;
@@ -18,10 +19,12 @@ const Banner = ({
 }: BannerProps): JSX.Element => {
   return (
     <div className={classes.wrapper}>
-      <Search
-        setIsSearchOptionSelected={setIsSearchOptionSelected}
-        setChosenResult={setChosenResult}
-      />
+      <ErrorBoundary>
+        <Search
+          setIsSearchOptionSelected={setIsSearchOptionSelected}
+          setChosenResult={setChosenResult}
+        />
+      </ErrorBoundary>
       <p className={classes.title}>New Office Opening In San Diego</p>
       <div className={classes.iconWrapper}>
         <div className={classes.iconWrapper2}>
