@@ -1,0 +1,73 @@
+.root {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  height: 57px;
+  justify-content: space-between;
+  background-color: black;
+
+  margin: 0;
+}
+.textStyle {
+  box-sizing: border-box;
+  padding: 0 32px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+  height: 57px;
+  border-radius: 0;
+  display: flex;
+
+  align-items: center;
+  background-color: black;
+  gap: 30px;
+}
+
+.centercontent {
+  display: flex;
+  width: 100%;
+}
+
+/* .infoWrapper {
+     display:  flex ;
+     justify-content:  space-between ;
+    align-items:  center ;
+    width: 904;
+   
+   } */
+
+.brandImage {
+  width: 165;
+  height: 40;
+  object-fit: cover;
+}
+.info {
+  color: white;
+
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+.info2 {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 822px;
+}
+.logoStyle {
+  margin-top: 5px;
+}
+.info3 {
+  width: 210px;
+  color: white;
+  margin: 0px;
+  align-items: center;
+  gap: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}

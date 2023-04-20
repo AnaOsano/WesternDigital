@@ -1,0 +1,92 @@
+.wrapper {
+  width: 702px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  box-shadow: none;
+}
+#button {
+  text-transform: capitalize;
+  background-color: white;
+  width: 120px;
+  height: 44px;
+  margin-right: 10px;
+  font-weight: 500;
+}
+.hrContact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hrText {
+  font-weight: 500px;
+  font-size: 26px;
+  color: white;
+  margin-bottom: 30px;
+}
+.hrText2 {
+  font-weight: 500;
+  font-size: 26px;
+  color: white;
+  margin: 0;
+}
+.hrText1 {
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  margin-top: 0;
+}
+.boxWrapper {
+  position: relative;
+  width: 700px;
+  height: 238px;
+  margin-top: 40px;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+.title1 {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0px;
+  padding-bottom: 29px;
+}
+.info {
+  display: flex;
+  margin-bottom: 0px;
+  background-color: #f9fafc;
+  gap: 16px;
+  font-size: 14px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
+  height: 188px;
+}
+.icon {
+  padding-right: 32px;
+  color: #5da7fb;
+}
+.importantQuestions {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hrWrapper {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 16px;
+  margin-left: 20px;
+}
