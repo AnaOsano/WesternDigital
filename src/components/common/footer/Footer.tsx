@@ -1,24 +1,5 @@
 import classes from "./footer.module.css";
 
-// export default function Footer() {
-//   const classes = useStyles();
-
-//   return (
-//     <header className={classes.root}>
-//       <Paper className={classes.textStyle}>
-// <div className={classes.pStyle}>
-//   <p>Shopping</p>
-//   <p>My account</p>
-//   <p>Sign up for email</p>
-//   <p>Product portfolio</p>
-//   <p>Shopping FAQ</p>
-
-// </div>
-//       </Paper>
-//     </header>
-//   );
-// }
-
 const Footer = () => {
   return (
     <footer className={classes.footer}>
