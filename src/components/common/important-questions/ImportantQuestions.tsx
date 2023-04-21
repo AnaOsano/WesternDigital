@@ -1,4 +1,3 @@
-import * as React from "react";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -8,100 +7,9 @@ import { makeStyles, Box, Button } from "@material-ui/core";
 import RocketLaunchOutlinedIcon from "@mui/icons-material/RocketLaunchOutlined";
 import Questions from "../../../assets/brandImages/Questions";
 
-const useStyles = makeStyles(() => ({
-  wrapper: {
-    width: "702px",
-    display: "flex",
-    flexDirection: "column",
-    margin: "0px",
-    boxShadow: "none",
-  },
-  button: {
-    textTransform: "capitalize",
-    backgroundColor: "white",
-    width: "120px",
-    height: "44px",
-    marginRight: "10px",
-  },
-  hrContact: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  hrText: {
-    fontWeight: "500px",
-    fontSize: "26px",
-    color: "white",
-    marginBottom: "30px",
-  },
-  hrText2: {
-    fontWeight: "500px",
-    fontSize: "26px",
-    color: "white",
-    marginBotttom: "32px",
-  },
-  hrText1: {
-    fontWeight: "400px",
-    fontSize: "16px",
-    color: "white",
-    marginTop: "54px",
-  },
-  boxWrapper: {
-    width: "700px",
-    height: "238px",
-    marginTop: "40px",
-    marginBottom: "150px",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  title: {
-    fontWeight: "600",
-    fontSize: "16px",
-    display: "flex",
-    paddingBottom: "16px",
-    paddingTop: "16px",
-  },
-  title1: {
-    fontWeight: "600",
-    fontSize: "24px",
-    display: "flex",
-    margin: "0px",
-    paddingBottom: "29px",
-  },
-  info: {
-    display: "flex",
-    marginBottom: "0px",
-    backgroundColor: "#F9FAFC",
-    gap: "16px",
-    fontSize: "14px",
-    alignItems: "center",
-    justifyContent: "space-between",
-    padding: "0px",
-    height: "188px",
-  },
-  icon: {
-    paddingRight: "32px",
-    color: "#5DA7FB",
-  },
-  importantQuestions: {
-    paddingLeft: "99px",
+import classes from "./important-questions.module.css";
 
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  hrWrapper: {
-    position: "absolute",
-    zIndex: 2,
-    display: "flex",
-    flexDirection: "column",
-    // marginTop: "-250px",
-  },
-}));
-
-export default function ImportantQuestions() {
-  const classes = useStyles();
+const ImportantQuestions = () => {
   return (
     <div className={classes.importantQuestions}>
       <p className={classes.title1}>Frequently asked questions</p>
@@ -110,11 +18,9 @@ export default function ImportantQuestions() {
         <AccordionSummary
           expandIcon={<ExpandMoreIcon sx={{ color: "red" }} />}
           aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
+          id="panel1a-header">
           <RocketLaunchOutlinedIcon
-            className={classes.icon}
-          ></RocketLaunchOutlinedIcon>
+            className={classes.icon}></RocketLaunchOutlinedIcon>
           <Typography sx={{ fontWeight: "500" }}>
             How is performance management linked to development in Western
             Digital?
@@ -134,11 +40,9 @@ export default function ImportantQuestions() {
         <AccordionSummary
           expandIcon={<ExpandMoreIcon sx={{ color: "red" }} />}
           aria-controls="panel2a-content"
-          id="panel2a-header"
-        >
+          id="panel2a-header">
           <RocketLaunchOutlinedIcon
-            className={classes.icon}
-          ></RocketLaunchOutlinedIcon>
+            className={classes.icon}></RocketLaunchOutlinedIcon>
           <Typography sx={{ fontWeight: "500" }}>
             I am a temporary appointment; can I create my work-plan in
             e-Performance?
@@ -158,11 +62,9 @@ export default function ImportantQuestions() {
         <AccordionSummary
           expandIcon={<ExpandMoreIcon sx={{ color: "red" }} />}
           aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
+          id="panel1a-header">
           <RocketLaunchOutlinedIcon
-            className={classes.icon}
-          ></RocketLaunchOutlinedIcon>
+            className={classes.icon}></RocketLaunchOutlinedIcon>
           <Typography sx={{ fontWeight: "500" }}>
             Is the second reporting officer required to make comments in my
             e-Performance document?
@@ -355,11 +257,9 @@ export default function ImportantQuestions() {
         <AccordionSummary
           expandIcon={<ExpandMoreIcon sx={{ color: "red" }} />}
           aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
+          id="panel1a-header">
           <RocketLaunchOutlinedIcon
-            className={classes.icon}
-          ></RocketLaunchOutlinedIcon>
+            className={classes.icon}></RocketLaunchOutlinedIcon>
           <Typography sx={{ fontWeight: "500" }}>
             How is performance management linked to development in Western
             Digital?
@@ -379,11 +279,9 @@ export default function ImportantQuestions() {
         <AccordionSummary
           expandIcon={<ExpandMoreIcon sx={{ color: "red" }} />}
           aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
+          id="panel1a-header">
           <RocketLaunchOutlinedIcon
-            className={classes.icon}
-          ></RocketLaunchOutlinedIcon>
+            className={classes.icon}></RocketLaunchOutlinedIcon>
           <Typography sx={{ fontWeight: "500" }}>
             I am a temporary appointment; can I create my work-plan in
             e-Performance?
@@ -403,11 +301,9 @@ export default function ImportantQuestions() {
         <AccordionSummary
           expandIcon={<ExpandMoreIcon sx={{ color: "red" }} />}
           aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
+          id="panel1a-header">
           <RocketLaunchOutlinedIcon
-            className={classes.icon}
-          ></RocketLaunchOutlinedIcon>
+            className={classes.icon}></RocketLaunchOutlinedIcon>
           <Typography sx={{ fontWeight: "500" }}>
             I have a performance evaluation report for 2022-23. Since the review
             is starting in 2023, can I use this one as part of the four required
@@ -430,11 +326,13 @@ export default function ImportantQuestions() {
           <p className={classes.hrText1}>Frequently Asked Questions</p>
           <p className={classes.hrText2}>Can’t find what you’re looking for?</p>
           <div className={classes.hrContact}>
-            <Button className={classes.button}>Ask HR</Button>
+            <Button id={classes.button}>Ask HR</Button>
             <p className={classes.hrText}>or call +1 213-757-3900</p>
           </div>
         </div>
       </Box>
     </div>
   );
-}
+};
+
+export default ImportantQuestions;

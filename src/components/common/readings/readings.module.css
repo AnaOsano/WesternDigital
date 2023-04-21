@@ -1,0 +1,26 @@
+.wrapper {
+  width: 270px;
+  background-color: white;
+}
+.info {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 0;
+}
+.imagesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  height: 44px;
+  font-weight: 500;
+  width: 136px;
+  background-color: white;
+  border-radius: 2px;
+  padding: 10px;
+  color: black;
+  text-transform: capitalize;
+  border-color: black;
+}

@@ -1,0 +1,65 @@
+.wrapper {
+  width: 100%;
+  max-width: 1440px;
+  height: 358px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  background-size: cover;
+  background-image: url("../../../assets/brandImages/Group.png");
+}
+
+.title {
+  font-size: 34px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 29px;
+  width: 555px;
+  color: white;
+  margin: 0px;
+}
+.subtitle {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  width: 555px;
+  color: white;
+  text-align: center;
+}
+#button {
+  height: 44px;
+  width: 136px;
+  background-color: white;
+  border-radius: 2px;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#iconLeft {
+  width: 25px;
+  color: white;
+  padding-right: 49px;
+  cursor: pointer;
+}
+
+#iconRight {
+  width: 25px;
+  color: white;
+  padding-left: 49px;
+  cursor: pointer;
+}
+.iconWrapper2 {
+  display: flex;
+}

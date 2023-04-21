@@ -1,0 +1,45 @@
+.root {
+  width: fit-content;
+}
+.root .Mui-expanded {
+  margin: 0;
+}
+
+.root .MuiAccordionSummary-root.Mui-expanded {
+  min-height: 0;
+}
+.root .MuiAccordionSummary-root.Mui-expanded .MuiAccordionSummary-content {
+  margin: 0;
+}
+
+.wrapper {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  display: flex;
+  margin-bottom: 0px;
+  background-color: #f9fafc;
+  gap: 16px;
+  font-size: 14px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
+  height: 40px;
+}
+.info2 {
+  display: flex;
+  margin-bottom: 0px;
+  background-color: #f9fafc;
+  gap: 16px;
+  font-size: 14px;
+  align-items: center;
+  padding: 0px;
+  height: 40px;
+}
+.icon {
+  padding-left: 32px;
+  color: red;
+}

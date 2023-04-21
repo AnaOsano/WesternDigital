@@ -1,33 +1,41 @@
-import React from "react";
-import Header from "./components/common/header/Header";
-import "./App.css";
-import Banner from "./components/common/header/Banner";
-import Accordion from "./components/common/header/Accordion";
-import ImportantQuestions from "./components/common/header/ImportantQuestions";
-import Footer from "./components/common/header/Footer";
-import Readings from "./components/common/header/Readings";
-import { makeStyles } from "@material-ui/core";
+import { useState } from "react";
+import Header from "./components/common/header";
+import classes from "./app.module.css";
+import Banner from "./components/common/banner";
+import Accordion from "./components/common/aside-accordion";
+import ImportantQuestions from "./components/common/important-questions";
+import Footer from "./components/common/footer";
+import Readings from "./components/common/readings";
+import SearchResultsComponent from "./components/common/search/SearchResultsComponent";
+import ISearchResults from "./components/common/search/types/interfaces";
 
-const useStyles = makeStyles(() => ({
-  wrapper: {
-    display: "flex",
-  },
-}));
-function App() {
-  const classes = useStyles();
+const App = () => {
+  const [isSearchOptionSelected, setIsSearchOptionSelected] =
+    useState<boolean>(false);
+  const [chosenResult, setChosenResult] = useState<ISearchResults>({
+    title: "",
+    content: "",
+    id: 0,
+  });
   return (
-    <div className="App">
+    <div className="app">
       <Header />
-
-      <Banner />
+      <Banner
+        setIsSearchOptionSelected={setIsSearchOptionSelected}
+        setChosenResult={setChosenResult}
+      />
       <div className={classes.wrapper}>
         <Accordion />
-        <ImportantQuestions />
+        {isSearchOptionSelected ? (
+          <SearchResultsComponent chosenResult={chosenResult} />
+        ) : (
+          <ImportantQuestions />
+        )}
         <Readings />
       </div>
       <Footer />
     </div>
   );
-}
+};
 
 export default App;
