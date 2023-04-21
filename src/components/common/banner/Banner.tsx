@@ -12,10 +12,10 @@ type BannerProps = {
   setChosenResult: Dispatch<React.SetStateAction<ISearchResults>>;
 };
 
-const Banner = ({
+const Banner: React.FC<BannerProps> = ({
   setIsSearchOptionSelected,
   setChosenResult,
-}: BannerProps): JSX.Element => {
+}): JSX.Element => {
   return (
     <div className={classes.wrapper}>
       <Search
