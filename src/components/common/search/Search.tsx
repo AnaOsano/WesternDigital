@@ -7,10 +7,10 @@ import { SearchProps } from "./types/search-props";
 import ISearchResults from "./types/interfaces";
 import ErrorSnackbar from "../../../error/ErrorSnackbar";
 
-const Search = ({
+const Search: React.FC<SearchProps> = ({
   setIsSearchOptionSelected,
   setChosenResult,
-}: SearchProps) => {
+}): JSX.Element => {
   const [inputValue, setInputValue] = useState<string>("");
   const [isSearchMade, setIsSearchMade] = useState<boolean>(false);
   const [searchResults, setSearchResults] = useState<ISearchResults[]>([]);
